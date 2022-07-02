@@ -35,9 +35,7 @@ pipeline {
         }
         stage('codecoverage') {
 
-           tools {
-              jdk 'java11.0.15'
-           }
+           
 	         steps {
                 // step4
                 echo 'codecoverage..'
