@@ -30,7 +30,7 @@ pipeline {
                }
            }			
         }
-        stage('codecoverate') {
+        stage('codecoverage') {
 	   steps {
                 echo 'codecoverage..'
 		sh script: '/opt/maven/bin/mvn cobertura:cobertura -Dcobertura.report.format=xml'
